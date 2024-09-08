@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@color/clrGenOnePrimary"
+    >
+
+    <!--
+    @author: Rajan Bhamra 2034215
+    @version: 3.0
+    Purpose: Home Page for CSC306 Coursework.
+    -->
+
+    <TextView
+        android:id="@+id/RajAppsLogo_HomePage"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="204dp"
+
+        android:text="@string/raj_apps"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/NewUserButton_OnHomePage"
+        android:layout_width="301dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/clrGenOneSecondary"
+
+        android:text="@string/new_user_homepage_button"
+        android:textColor="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632"
+        app:rippleColor="@color/clrGenOne4th" />
+
+    <Button
+        android:id="@+id/LoginButton_OnHomePage"
+        android:text="@string/login_here_homepage_button"
+        android:layout_width="302dp"
+        android:layout_height="77dp"
+
+        android:backgroundTint="@color/clrGenOneSecondary"
+        android:textColor="@color/clrGenOneTertiary"
+        app:rippleColor="@color/clrGenOne4th"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/LoginAsGuestButton_OnHomePage"
+        android:text="@string/login_as_guest_homepage_button"
+        android:layout_width="298dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="4dp"
+
+        android:backgroundTint="@color/clrGenOneSecondary"
+        android:textColor="@color/clrGenOneTertiary"
+        app:rippleColor="@color/clrGenOne4th"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/TopRestaurantText_HomePage"
+        android:text="@string/recent_news_article"
+        android:layout_width="362dp"
+        android:layout_height="47dp"
+
+        android:background="@drawable/button_gradient"
+        android:textColor="@color/clrGenOneTertiary"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textStyle="italic
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="66dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/InvitingFoodImage_HomePage"
+        android:contentDescription="@string/inviting_review_image_here"
+        app:srcCompat="@drawable/restaurant_review_image"
+        android:layout_width="296dp"
+        android:layout_height="185dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256"
+         />
+
+    <TextView
+        android:id="@+id/TextMotto_HomePage"
+        android:text="@string/home_page_slogan"
+        android:layout_width="251dp"
+        android:layout_height="16dp"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <TextView
+        android:id="@+id/MainHeader_HomePage"
+        android:text="@string/home_page_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        android:textColor="@color/clrGenOneTertiary"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/clrGenOnePrimary"
+    >
+
+    <!--
+    @author: Rajan Bhamra 2034215
+    @version: 3.0
+    Purpose: Add a New Review Page for CSC306 Coursework.
+    -->
+
+    <RatingBar
+        android:id="@+id/Rate_The_Service_ratingBar"
+        android:layout_width="232dp"
+        android:layout_height="48dp"
+        android:progressTint="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/RajAppsLogo_AddNewReviewPage"
+        android:layout_width="98dp"
+        android:layout_height="30dp"
+
+        android:background="@drawable/button_gradient"
+        android:fontFamily="cursive"
+        android:text="@string/raj_apps"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/MainHeader_AddNewReviewPage"
+        android:layout_width="248dp"
+        android:layout_height="53dp"
+        android:fontFamily="monospace"
+
+        android:text="@string/add_new_review_header"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/UserInputReviewLocation_NewReviewPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/add_review_location_title"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <EditText
+        android:id="@+id/UserInputReviewContent_NewReviewPage"
+        android:layout_width="201dp"
+        android:layout_height="245dp"
+        android:ems="10"
+        android:hint="@string/add_review_content_input"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+<!--    <com.google.android.gms.maps.MapView-->
+<!--        android:id="@+id/UserAddLocation_mapView"-->
+<!--        android:layout_width="164dp"-->
+<!--        android:layout_height="129dp"-->
+<!--        android:background="@drawable/button_gradient"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.939"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.973" />-->
+
+    <ImageView
+        android:id="@+id/AppDisplayUserImage"
+        android:layout_width="124dp"
+        android:layout_height="98dp"
+        android:background="@drawable/button_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <RatingBar
+        android:id="@+id/RateTheFood_ratingBar"
+        android:layout_width="235dp"
+        android:layout_height="46dp"
+        android:progressTint="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+
+
+    <TextView
+        android:id="@+id/Text_rateFood"
+        android:layout_width="137dp"
+        android:layout_height="23dp"
+        android:text="@string/rate_food_request_addNewReviewPage"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <TextView
+        android:id="@+id/Text_RateService"
+        android:layout_width="155dp"
+        android:layout_height="38dp"
+        android:text="@string/rate_service_addNewReviewPage"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/UploadFoodPicButton_AddNewReviewPage"
+        android:layout_width="164dp"
+        android:layout_height="60dp"
+        android:text="@string/upload_foodPic_addNewReviewPage"
+
+        android:backgroundTint="@color/clrGenOneSecondary"
+        android:textColor="@color/clrGenOneTertiary"
+        app:rippleColor="@color/clrGenOne4th"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <Button
+        android:id="@+id/SubmitReviewButton_AddNewReviewPage"
+        android:layout_width="188dp"
+        android:layout_height="78dp"
+        android:backgroundTint="@color/clrGenOneSecondary"
+
+        android:text="@string/submit_review_finalBtn_addNewReviewPage"
+        android:textColor="@color/clrGenOne4th"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921"
+        app:rippleColor="@color/clrGenOne4th" />
+
+    <TextView
+        android:id="@+id/Text_add_location_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+
+        android:text="@string/add_locationString_addNewReviewPage"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textStyle="italic"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <!--
+
+    HERE IS THE SEARCH VIEW I COULD NOT IMPLEMENT / GET WORKING
+
+        <SearchView
+            android:layout_width="125dp"
+            android:layout_height="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.735" />
+
+    -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

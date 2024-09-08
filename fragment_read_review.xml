@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrGenOnePrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--
+    @author: Rajan Bhamra 2034215
+    @version: 3.0
+    Purpose: View Review Page for CSC306 Coursework.
+    -->
+
+
+    <TextView
+        android:id="@+id/RajAppsLogo_ViewRestaurantReviews"
+        android:layout_width="92dp"
+        android:layout_height="34dp"
+
+
+        android:background="@drawable/button_gradient"
+        android:fontFamily="cursive"
+        android:text="@string/raj_apps"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <TextView
+        android:id="@+id/MainHeader_ViewRestaurantReviews"
+        android:layout_width="194dp"
+        android:layout_height="70dp"
+        android:text="@string/review_restaurant_viewReviewPage"
+        android:paddingTop="10dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+
+    <!--
+    RAJ PUT THIS SHIT IN A HORIZONTAL VIEW BOI
+    -->
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="469dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
+
+
+        <TextView
+            android:id="@+id/text_RestaurantName_ViewTheRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/rounded_outline_box"
+
+            android:fontFamily="casual"
+            android:paddingTop="16dp"
+            android:hint="@string/restaurant_name__viewReviewPage"
+            android:textAlignment="center"
+            android:textColorHint="@color/clrGenOneTertiary"
+            android:textColor="@color/clrGenOneTertiary"
+
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.248" />
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="67dp"
+            android:background="@drawable/rounded_outline_box"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="633dp">
+
+            <TextView
+                android:id="@+id/text_AvgStarRate_ViewTheRestaurant"
+                android:layout_width="159dp"
+                android:layout_height="match_parent"
+                android:fontFamily="casual"
+                android:paddingTop="16dp"
+
+                android:text="@string/avg_star_rate_viewReviewPage"
+                android:textAlignment="center"
+                android:textColor="@color/clrGenOneTertiary"
+                android:textStyle="italic"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.179" />
+
+            <RatingBar
+                android:id="@+id/actualStarRating_ViewRestaurantReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="67dp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_UploadedRestaurantImage_ViewTheRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@drawable/rounded_outline_box"
+            app:srcCompat="@drawable/restaurant_review_image" />
+
+        <TextView
+            android:id="@+id/text_ActualReview_ViewTheRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/rounded_outline_box"
+            android:fontFamily="casual"
+
+            android:paddingTop="16dp"
+            android:hint="@string/text_regarding_review_viewReviewPage"
+            android:textAlignment="center"
+            android:textColor="@color/clrGenOneTertiary"
+            android:textColorHint="@color/clrGenOneTertiary"
+
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

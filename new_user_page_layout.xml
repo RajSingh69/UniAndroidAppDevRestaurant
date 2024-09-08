@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrGenOnePrimary"
+    >
+
+    <!--
+    @author: Rajan Bhamra 2034215
+    @version: 3.0
+    Purpose: New User Page for CSC306 Coursework.
+    -->
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="95dp"
+        android:layout_height="26dp"
+
+        android:background="@drawable/button_gradient"
+        android:fontFamily="cursive"
+        android:text="@string/raj_apps"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toEndOf="@+id/CreateNewUserHeader"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        app:srcCompat="@android:drawable/ic_dialog_alert" />
+
+    <TextView
+        android:id="@+id/CreateNewUserHeader"
+        android:layout_width="176dp"
+        android:layout_height="63dp"
+        android:fontFamily="monospace"
+
+        android:text="@string/create_new_user_header"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/LoginButton_NewUserPage"
+        android:layout_width="179dp"
+        android:layout_height="72dp"
+        android:text="@string/login_button"
+
+        android:backgroundTint="@color/clrGenOneSecondary"
+        android:textColor="@color/clrGenOneTertiary"
+        app:rippleColor="@color/clrGenOne4th"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+    <Button
+        android:id="@+id/CreateUserButton_NewUserPage"
+        android:layout_width="184dp"
+        android:layout_height="72dp"
+        android:text="@string/create_accountText_newUserPage"
+
+        android:backgroundTint="@color/clrGenOneSecondary"
+        android:textColor="@color/clrGenOne4th"
+        app:rippleColor="@color/clrGenOne4th"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodCreationsToggle"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="370dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateNewUserHeader"
+        app:layout_constraintVertical_bias="0.239">
+
+        <EditText
+            android:id="@+id/editText_EnterName_CreateUserAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Please enter your Name:"
+            android:textColorHint="@color/white"
+
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editText_EnterEmail_CreateUserAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email_address_hint_newUserPage"
+            android:textColorHint="@color/white"
+
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editText_EnterPhone_CreateUserAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/phone_number_hint_newUserPage"
+            android:textColorHint="@color/white"
+
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+
+            android:inputType="phone" />
+
+
+        <EditText
+            android:id="@+id/editText_EnterAge_CreateUserAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_age_hint_newUserHomepage"
+            android:textColorHint="@color/white"
+
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText_EnterPassword_CreateUserAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="casual"
+
+            android:inputType="text"
+            android:hint="Please enter your Password:"
+            android:textColorHint="@color/white"
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_likesAndDislikesMsg_NewUserAccount"
+        android:layout_width="314dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/likes_dislikes_text_newUserPage"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/italianFoodToggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Switch
+        android:id="@+id/africanFoodToggle"
+        android:layout_width="123dp"
+        android:layout_height="53dp"
+        android:text="@string/african_food_toggle_newUserPage"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+        android:thumbTint="@color/clrGenOne4th"
+        android:trackTint="@color/clrGenOne5th"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indianFoodToggle"
+        app:layout_constraintVertical_bias="0.232"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/asianFoodToggle"
+        android:layout_width="123dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="500dp"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+        android:thumbTint="@color/clrGenOne4th"
+        android:trackTint="@color/clrGenOne5th"
+
+
+        android:text="@string/asian_food_toggle_newUserPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/italianFoodToggle"
+        android:layout_width="123dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="500dp"
+        android:text="@string/italian_food_toggle_newUserPage"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+        android:thumbTint="@color/clrGenOne4th"
+        android:trackTint="@color/clrGenOne5th"
+
+
+        app:layout_constraintEnd_toStartOf="@+id/asianFoodToggle"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/foodCreationsToggle"
+        android:layout_width="123dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/food_creations_toggle_newUserPage"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+        android:thumbTint="@color/clrGenOne4th"
+        android:trackTint="@color/clrGenOne5th"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/italianFoodToggle"
+        app:layout_constraintVertical_bias="0.049"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/indianFoodToggle"
+        android:layout_width="123dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="500dp"
+        android:checked="false"
+
+        android:fontFamily="casual"
+        android:text="@string/indian_food_toggle_newUserPage"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textStyle="italic"
+
+        android:thumbTint="@color/clrGenOne4th"
+        android:trackTint="@color/clrGenOne5th"
+
+        app:layout_constraintEnd_toStartOf="@+id/italianFoodToggle"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/foodFailsToggle"
+        android:layout_width="123dp"
+        android:layout_height="53dp"
+        android:text="@string/food_fails_toggle_newUserPage"
+
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/clrGenOneTertiary"
+
+        android:thumbTint="@color/clrGenOne4th"
+        android:trackTint="@color/clrGenOne5th"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asianFoodToggle"
+        app:layout_constraintVertical_bias="0.232"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

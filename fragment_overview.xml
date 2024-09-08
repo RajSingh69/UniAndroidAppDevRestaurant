@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/clrGenOnePrimary"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayUserEmail"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_outline_box"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text=":"
+        android:textColor="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <TextView
+        android:id="@+id/fragOverviewTextEmail"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:text="User Email"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <TextView
+        android:id="@+id/fragOverviewTextPhone"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:text="User Phone"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <TextView
+        android:id="@+id/fragOverviewTextName"
+        android:layout_width="87dp"
+        android:layout_height="33dp"
+        android:text="User Name:"
+
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/MainHeader_Overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overview Of User Profile"
+
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/fragOverviewTextAge"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:text="User Age"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayUserName"
+
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_outline_box"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text=":"
+
+        android:textColor="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <TextView
+        android:id="@+id/fragOverviewTextPassword"
+        android:layout_width="98dp"
+        android:layout_height="32dp"
+        android:text="User Password"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <TextView
+        android:id="@+id/fragOverviewAsian"
+        android:layout_width="115dp"
+        android:layout_height="35dp"
+        android:text="Like Asian Food?"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayLikeCreations"
+        android:layout_width="66dp"
+        android:layout_height="28dp"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayItalianFood"
+        android:layout_width="66dp"
+        android:layout_height="28dp"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/fragOverviewAfrican"
+        android:layout_width="120dp"
+        android:layout_height="39dp"
+        android:text="Like African Food?"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayAfricanFood"
+        android:layout_width="66dp"
+        android:layout_height="28dp"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayAsianFood"
+        android:layout_width="66dp"
+        android:layout_height="28dp"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <TextView
+        android:id="@+id/fragOverviewIndian"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="Like Indian Food?"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/fragOverviewItalian"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="Like Italian Food?"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayLikeFails"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:text=":"
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <TextView
+        android:id="@+id/fragOverviewFails"
+        android:layout_width="115dp"
+        android:layout_height="35dp"
+        android:text="Like Fails?"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayIndianFood"
+        android:layout_width="66dp"
+        android:layout_height="28dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/clrGenOneTertiary"
+
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/fragOverviewCreations"
+        android:layout_width="115dp"
+        android:layout_height="35dp"
+        android:text="Like Creations?"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayUserPhone"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_outline_box"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text=":"
+        android:textColor="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayUserAge"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_outline_box"
+        android:fontFamily="casual"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayUserPassword"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_outline_box"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text=":"
+        android:textColor="@color/clrGenOneTertiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayBookingTime"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_outline_box"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text=":"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <TextView
+        android:id="@+id/fragOverviewBookTime"
+        android:layout_width="136dp"
+        android:layout_height="32dp"
+        android:text="Booking Time:"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <TextView
+        android:id="@+id/fragOverviewBookLocation"
+        android:layout_width="136dp"
+        android:layout_height="32dp"
+        android:text="Booking Location:"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayBookingDate"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_outline_box"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text=":"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <TextView
+        android:id="@+id/fragOverviewDisplayBookingLocation"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_outline_box"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text=":"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <TextView
+        android:id="@+id/fragOverviewBookDate"
+        android:layout_width="136dp"
+        android:layout_height="32dp"
+        android:text="Booking Date:"
+        android:textColor="@color/clrGenOneTertiary"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <Button
+        android:id="@+id/overview_ShutDownButton"
+
+        android:backgroundTint="@color/clrGenOneSecondary"
+        android:textColor="@color/clrGenOne4th"
+        android:textSize="14sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log off &amp; Shut down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <Button
+        android:id="@+id/overview_LogOnButton"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+
+        android:backgroundTint="@color/clrGenOneSecondary"
+        android:textColor="@color/clrGenOneTertiary"
+        app:rippleColor="@color/clrGenOne4th"
+
+        android:text="Back to Log on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/overview_HomePageButton"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+
+        android:backgroundTint="@color/clrGenOneSecondary"
+        android:textColor="@color/clrGenOneTertiary"
+        app:rippleColor="@color/clrGenOne4th"
+
+        android:text="Back to Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
